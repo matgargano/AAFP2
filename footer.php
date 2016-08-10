@@ -20,6 +20,7 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'aafp' ), 'aafp', '<a href="http://randjsc.com" rel="designer">R&J SC - Chris S</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+</div><!-- .container -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

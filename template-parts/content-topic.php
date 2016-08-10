@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in single-hot_topics.php.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -17,6 +17,11 @@
 			<figure class="featured-image">
 				<?php the_post_thumbnail (); ?>
 			</figure>
+			<figure class="featured-image">
+				<?php the_post_thumbnail ('aafp-featured-thumb'); ?>
+			</figure>
+			
+			
 		<?php }
 		?>
 
@@ -27,10 +32,10 @@
 		<?php
 			the_content();
 
-			wp_link_pages( array(
+			/*wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'aafp' ),
 				'after'  => '</div>',
-			) );
+			) );*/
 		?>
 	</div><!-- .entry-content -->
 

@@ -41,6 +41,8 @@ function aafp_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size(828, 240, true );
+	add_image_size( 'aafp-featured-thumb', 260, 300, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -104,11 +106,17 @@ add_action( 'widgets_init', 'aafp_widgets_init' );
  */
 function aafp_scripts() {
 
+	// Enqueue Bootstrap stylesheet
+	wp_enqueue_style( 'bootstrap-styles', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
+
 	// Enqueue main stylesheet
 	wp_enqueue_style( 'aafp-style', get_template_directory_uri() . '/builds/development/css/style.css', array(), null, 'screen' );
 
 	// Add Google Fonts: Raleway
 	wp_enqueue_style( 'aafp-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' );
+
+	// Enqueue Bootstrap Javascript
+	wp_enqueue_script( 'bootstrap-scripts', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' );	
 
 	wp_enqueue_script( 'aafp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
