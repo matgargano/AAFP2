@@ -102,7 +102,7 @@ add_action( 'widgets_init', 'aafp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function aafp_scripts() {
-	wp_enqueue_style( 'aafp-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'aafp-style', get_template_directory_uri() . '/builds/development/css/style.css', array(), null, 'screen' );
 
 	wp_enqueue_script( 'aafp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

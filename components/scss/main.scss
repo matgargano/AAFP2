@@ -42,8 +42,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
-@import "variables";
-@import "mixins";
+@import "partials/variables";
+@import "partials/mixins";
 
 /*--------------------------------------------------------------
 # Underscores
@@ -88,7 +88,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@import "site/secondary/widgets";
+// @import "site/secondary/widgets";
 
 /*--------------------------------------------------------------
 # Homepage
@@ -103,7 +103,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Contact Form
 --------------------------------------------------------------*/
-@import "partials/contact_form";
+// @import "partials/contact_form";
 
 /*--------------------------------------------------------------
 # Slick Slider
