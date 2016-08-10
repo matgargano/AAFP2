@@ -45,6 +45,7 @@ function aafp_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'aafp' ),
+		'secondary' => esc_html__( 'Secondary', 'aafp' ),
 	) );
 
 	/*
@@ -60,10 +61,10 @@ function aafp_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'aafp_custom_background_args', array(
+	/*add_theme_support( 'custom-background', apply_filters( 'aafp_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
-	) ) );
+	) ) );*/
 }
 endif;
 add_action( 'after_setup_theme', 'aafp_setup' );
@@ -102,7 +103,12 @@ add_action( 'widgets_init', 'aafp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function aafp_scripts() {
+
+	// Enqueue main stylesheet
 	wp_enqueue_style( 'aafp-style', get_template_directory_uri() . '/builds/development/css/style.css', array(), null, 'screen' );
+
+	// Add Google Fonts: Raleway
+	wp_enqueue_style( 'aafp-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' );
 
 	wp_enqueue_script( 'aafp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
