@@ -15,3 +15,22 @@
 	clear: both;
 	width: 100%;
 }
+
+
+ul {
+    list-style: none;
+}
+
+
+blockquote {
+    border-top: 4px solid #89d8d8;
+    border-left: none;
+    border-bottom: 4px solid #89d8d8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: teal;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
