@@ -1,11 +1,11 @@
-.content-area {
+/* .content-area {
 	float: right;
 	margin: 0 0 0 -25%;
 	width: 100%;
 }
 .site-main {
 	margin: 0 0 0 25%;
-}
+} */
 .site-content .widget-area {
 	float: left;
 	overflow: hidden;
@@ -23,9 +23,9 @@ ul {
 
 
 blockquote {
-    border-top: 4px solid #89d8d8;
+    border-top: 4px solid $teal;
     border-left: none;
-    border-bottom: 4px solid #89d8d8;
+    border-bottom: 4px solid $teal;
     padding-top: 20px;
     padding-bottom: 20px;
     color: teal;
@@ -33,4 +33,32 @@ blockquote {
     margin-top: 30px;
     margin-bottom: 30px;
     line-height: 1.6;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+a.button {
+    padding: 2em;
+    border: 1px solid $teal;
+    border-radius: 10px;
+    max-width: 280px;
+    margin-bottom: 20px;
+    // vertical-align: middle;
+
+    i {
+        margin-right: 20px;
+    }
+}
+
+.entry-header {
+    border-bottom: 1px solid $teal;
+
+    h1 {
+        color: $teal;
+    }
 }

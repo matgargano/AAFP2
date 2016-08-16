@@ -14,6 +14,9 @@
 
 get_header(); ?>
 
+<div class="container">
+<div class="row">
+<div class="col-md-7">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -28,6 +31,15 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	</div>
+	<div class="col-md-5">
+		<div class="button-wrap">
+			<a class="button" href="#"><i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>Find a Veterinariar or Practice</a>
+			<a class="button" href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>Join our Mailing List</a>
+		</div>
+	</div>
+	</div>
+</div>
 
 <?php
 
