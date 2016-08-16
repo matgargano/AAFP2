@@ -14,6 +14,18 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="row gray-bg">
+		<div class="col-sm-8">Footer Menu Here</div>
+		<div class="col-sm-4">Social<br>Icons<br>Here</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<p>Created by the American Association of Feline Practitioners<br>© Copyright 2016 AAFP</p>
+		</div>
+		
+	</div>
+
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'aafp' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'aafp' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

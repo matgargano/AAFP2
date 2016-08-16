@@ -16,6 +16,14 @@ get_header(); ?>
 
 <div class="container">
 <div class="row">
+	<div class="col-sm-5 mobile-hidden">
+		<img src="http://localhost/aafp/wp-content/uploads/2016/08/Branding-Static-Cat-purchased.jpg">
+	</div>
+	<div class="col-sm-7">
+		<?php echo do_shortcode('[masterslider id="1"]'); ?>
+	</div>
+</div>
+<div class="row">
 <div class="col-md-7">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

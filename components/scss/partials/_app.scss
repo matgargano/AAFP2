@@ -15,12 +15,15 @@
 	clear: both;
 	width: 100%;
 }
-
+@media screen and (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
 
 ul {
     list-style: none;
 }
-
 
 blockquote {
     border-top: 4px solid $teal;
