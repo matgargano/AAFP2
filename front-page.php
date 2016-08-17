@@ -24,7 +24,10 @@ get_header(); ?>
 	</div>
 </div>
 <div class="row">
-	<p>Categories here</p>
+	<nav id="secondary-navigation" class="secondary-navigation" role="navigation">
+		<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'aafp' ); ?></button>
+		<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
+	</nav><!-- #site-navigation -->
 </div>
 <div class="row">
 <div class="col-md-7">
