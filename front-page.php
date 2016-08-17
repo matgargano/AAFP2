@@ -15,13 +15,16 @@
 get_header(); ?>
 
 <div class="container">
-<div class="row">
-	<div class="col-sm-5 mobile-hidden">
-		<img src="http://localhost/aafp/wp-content/uploads/2016/08/Branding-Static-Cat-purchased.jpg">
+<div class="row slider-row">
+	<div class="col-sm-5 mobile-hidden bg-img">
+		
 	</div>
-	<div class="col-sm-7">
+	<div class="col-sm-7 slider-col">
 		<?php echo do_shortcode('[masterslider id="1"]'); ?>
 	</div>
+</div>
+<div class="row">
+	<p>Categories here</p>
 </div>
 <div class="row">
 <div class="col-md-7">
