@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<div class="container">
+
 <div class="row slider-row">
 	<div class="col-sm-5 mobile-hidden bg-img">
 		
@@ -30,21 +30,21 @@ get_header(); ?>
 	</nav><!-- #site-navigation -->
 </div>
 <div class="row">
-<div class="col-md-7">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="col-md-7">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-			<?php
-			while ( have_posts() ) : the_post();
+				<?php
+				while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+					get_template_part( 'template-parts/content', 'page' );
 
 
-			endwhile; // End of the loop.
-			?>
+				endwhile; // End of the loop.
+				?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
 	</div>
 	<div class="col-md-5">
 		<div class="button-wrap">
@@ -52,8 +52,8 @@ get_header(); ?>
 			<a class="button" href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>Join our Mailing List</a>
 		</div>
 	</div>
-	</div>
 </div>
+
 
 <?php
 
