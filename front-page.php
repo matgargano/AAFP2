@@ -29,6 +29,7 @@ get_header(); ?>
 		<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
 	</nav><!-- #site-navigation -->
 </div>
+<div class="container">
 <div class="row">
 	<div class="col-md-7">
 		<div id="primary" class="content-area">
@@ -48,10 +49,11 @@ get_header(); ?>
 	</div>
 	<div class="col-md-5">
 		<div class="button-wrap">
-			<a class="button" href="#"><i class="fa fa-stethoscope fa-2x" aria-hidden="true"></i>Find a Veterinariar or Practice</a>
-			<a class="button" href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>Join our Mailing List</a>
+			<a class="button" href="#"><div class="button-inner"><i class="fa fa-fw fa-stethoscope fa-2x" aria-hidden="true"></i><span>Find a Veterinariar <br>or Practice</span></div></a>
+			<a class="button" href="#"><div class="button-inner"><i class="fa fa-fw fa-envelope fa-2x" aria-hidden="true"></i><span>Join our <br>Mailing List</span></div></a>
 		</div>
 	</div>
+</div>
 </div>
 
 
