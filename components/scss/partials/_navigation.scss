@@ -6,7 +6,8 @@
     margin: 0 0 2em 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
 #secondary-menu li {
@@ -15,10 +16,11 @@
 	a {
 	    display: flex;
     	flex-direction: column;
-    	margin: 0 1em;
+    	margin: 1em;
     	border-radius: 6px;
     	background-color: #767676;
     	background-color: $lightgray;
+    	text-decoration: none;
 	}
 
 	img {
