@@ -16,7 +16,7 @@ article {
 }
 
 aside#secondary {
-    flex: 0 0 350px;
+    flex: 0 0 370px;
     background-color: $lightgray;
 	// padding: 0 2em;
 
@@ -29,4 +29,12 @@ aside#secondary {
 
 .featured-image {
     margin: 0;
+    border-top: 3px solid $teal-lt;
+    border-bottom: 3px solid $teal-lt;
+}
+
+.widget-area blockquote {
+    background-color: #fff;
+    margin: 0 10%;
+    font-size: 75%;
 }
