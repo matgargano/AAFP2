@@ -1,0 +1,32 @@
+
+
+.site-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article {
+    padding: 0 2em;
+}
+
+.content-area {
+    /* width: 75%; */
+    /* float: right; */
+    flex: 1 1 400px;
+}
+
+aside#secondary {
+    flex: 0 0 350px;
+    background-color: $lightgray;
+	// padding: 0 2em;
+
+	.widget-title {
+		background-color: darkgray;
+		margin: 0;
+		height: 100px;
+	}
+}
+
+.featured-image {
+    margin: 0;
+}
