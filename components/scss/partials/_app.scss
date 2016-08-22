@@ -6,6 +6,11 @@
 .site-main {
 	margin: 0 0 0 25%;
 } */
+
+:focus {
+  outline-color: $tomato;
+}
+
 .site-content .widget-area {
 	float: left;
 	overflow: hidden;

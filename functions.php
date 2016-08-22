@@ -48,6 +48,7 @@ function aafp_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'aafp' ),
 		'secondary' => esc_html__( 'Secondary', 'aafp' ),
+		'footer' => esc_html__( 'Footer', 'aafp' ),
 	) );
 
 	/*

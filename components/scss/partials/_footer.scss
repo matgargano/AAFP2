@@ -12,3 +12,26 @@
 	padding-top: 20px;
     padding-bottom: 20px;
 }
+
+ul#footer-menu {
+    display: flex;
+    flex-direction: column;
+
+    li {
+		margin: .5em 0;
+
+		a {
+			font-size: 1.5em;
+			font-weight: bold;
+			color: $teal;
+		}
+		a:hover,
+		a:visited {
+			color: $teal;
+		}
+    }
+}
+
+footer .row.gray-bg {
+    padding: 1.5em 0;
+}

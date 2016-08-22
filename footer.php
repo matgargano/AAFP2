@@ -15,7 +15,11 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row gray-bg">
-			<div class="col-sm-8">Footer Menu Here</div>
+			<div class="col-sm-8">
+				
+					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
+				
+			</div>
 			<div class="col-sm-4">Social<br>Icons<br>Here</div>
 		</div>
 		<div class="row">

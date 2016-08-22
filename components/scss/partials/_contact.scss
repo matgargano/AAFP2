@@ -28,6 +28,10 @@ form {
 			flex: 1 0 100%;
 		}
 	}
+	textarea {
+    	font-size: 1.3rem;
+    	padding: .8em 1em;
+	}
 }
 
 /* @media screen and (max-width: 544px) {
@@ -37,3 +41,22 @@ form {
 	}
 
 } */
+
+article#post-1890 {
+
+	.entry-header {
+	    float: right;
+	    width: 75%;
+	}
+	.entry-content {
+    	clear: both;
+    	padding-top: 90px;
+    	max-width: 600px;
+
+    	p:first-child {
+    		max-width: 500px;
+    	}
+	}
+
+}
+

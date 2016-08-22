@@ -1,0 +1,21 @@
+section#text-2 {
+	margin: 0;
+	padding: 2em 0 1.5em;
+	background-color: $darkgray;
+	color: #fff;
+	font-style: italic;
+
+	p {
+		margin: 0 0 0 8em;
+	}
+}
+
+.widget_nav_menu {
+    margin-bottom: 4em;
+
+    a,
+    a:hover,
+    a:visited {
+    	color: $darkgray;
+    }
+}
