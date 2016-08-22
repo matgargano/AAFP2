@@ -1,0 +1,39 @@
+input.wpcf7-form-control {
+    border-radius: 0;
+
+}
+
+input.wpcf7-validates-as-required {
+	border-left: 4px solid $tomato;
+	height: 40px;
+}
+
+form {
+	a {
+		color: $tomato;
+	}
+	a:visited,
+	a:hover {
+		color: $tomato;
+	}
+	.flex-wrap {
+		display: flex;
+		max-width: 600px;
+		flex-flow: row wrap;
+
+		p {
+			flex: 1 0 50%;
+		}
+		p.full-width {
+			flex: 1 0 100%;
+		}
+	}
+}
+
+/* @media screen and (max-width: 544px) {
+
+	.wpcf7-form-control-wrap {
+		width: 100%;
+	}
+
+} */
