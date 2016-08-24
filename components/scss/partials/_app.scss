@@ -1,3 +1,7 @@
+.site-logo img {
+  visibility: hidden;
+}
+
 /* .content-area {
 	float: right;
 	margin: 0 0 0 -25%;
@@ -74,9 +78,10 @@ blockquote::before{
 
 
 .entry-header {
-    border-bottom: 1px solid $teal;
+  border-bottom: 1px solid $teal; 
+}
 
-    h1 {
-        color: $teal;
-    }
+.entry-title,
+.category-title {
+  color: $teal;
 }

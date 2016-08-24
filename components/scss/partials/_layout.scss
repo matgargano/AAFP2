@@ -5,7 +5,7 @@
     flex-flow: row wrap;
 }
 
-article {
+.site-main {
     padding: 0 2em;
 }
 
@@ -15,17 +15,6 @@ article {
     flex: 1 1 400px;
 }
 
-aside#secondary {
-    flex: 0 0 370px;
-    background-color: $lightgray;
-	// padding: 0 2em;
-
-	.widget-title {
-		background-color: darkgray;
-		margin: 0;
-		height: 100px;
-	}
-}
 
 .featured-image {
     margin: 0;

@@ -1,3 +1,12 @@
+.widget-area {
+    flex: 0 0 370px;
+    background-color: $lightgray;
+	// padding: 0 2em;
+
+	.widget-title {
+	}
+}
+
 section#text-2 {
 	margin: 0;
 	padding: 2em 0 1.5em;
@@ -18,4 +27,36 @@ section#text-2 {
     a:visited {
     	color: $darkgray;
     }
+}
+
+.widget_nav_menu {
+
+	padding: 0 15%;
+
+	.widget-title {
+		color: $teal;
+		border-bottom: 1px solid teal;
+		margin-bottom: .8em;
+		height: auto;
+		padding-bottom: .3em;
+	}
+
+}
+
+#menu-category-pages li {
+
+	margin-bottom: .5em;
+
+	a {
+		font-size: .9em;
+		font-style: italic;
+	}
+}
+
+// Slogan
+.widget-area #text-3 {
+    background-color: $darkgray;
+    padding: 1.75em 0 1.25em 25%;
+    font-style: italic;
+    color: #fff;
 }
