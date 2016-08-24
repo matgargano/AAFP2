@@ -32,6 +32,12 @@ ul#footer-menu {
     }
 }
 
-footer .row.gray-bg {
-    padding: 1.5em 0;
+footer .gray-bg {
+	padding: 1.2em 5em;
+}
+
+.gray-bg:after {
+    content: "";
+    display: block;
+    clear: both;
 }

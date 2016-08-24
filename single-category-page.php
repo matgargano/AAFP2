@@ -28,9 +28,9 @@ get_sidebar('category-page'); ?>
 
 			endwhile; // End of the loop.
 			?>
-
+		<div class="topics-section">
 			<?php the_title( '<h2 class="category-title">', ' Topics</h2>' ); ?>
-
+			<ul class="topics-list">
 			<?php
 			global $post;
 			$my_query_args = array(
@@ -52,6 +52,9 @@ get_sidebar('category-page'); ?>
 			    <li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
 
 			<?php endwhile; endif; wp_reset_postdata(); ?>
+		</ul>
+		</div>
+		<hr>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
