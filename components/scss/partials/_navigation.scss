@@ -1,3 +1,11 @@
+// Primary Nav
+
+// highlight current page
+ul#primary-menu li.current_page_item,
+ul#primary-menu li.current_page_ancestor {
+    border-bottom: 4px solid $tomato;
+}
+
 
 // Secondary nav menu
 
@@ -37,3 +45,40 @@
     	font-weight: bold;
 	}
 }
+
+ul.topics-list {
+
+  columns: 2;
+  margin-bottom: 3em;
+  max-width: 90%;
+  font-size: .95em;
+  font-weight: 500;
+
+  li {
+    margin-bottom: .6em;
+  }
+
+  a {
+    color: #000;
+    cursor: auto;
+  }
+  a:hover {
+    color: $tomato;
+  }
+  a:before {
+    content: "\203A";
+    margin-right: 6px;
+  }
+  a:hover:before {
+  	text-decoration: none;
+  	underline: none;
+  }
+}
+/* .widget-area .current-menu-item {
+	font-weight: bold;
+	
+	a {
+		color: $teal;
+	}
+	
+} */

@@ -29,9 +29,19 @@ section#text-2 {
     }
 }
 
-.widget_nav_menu {
+.widget_nav_menu,
+.menu-category-pages {
 
 	padding: 0 15%;
+
+	.current_menu_item,
+	.current_page_item {
+		font-weight: bold;
+	
+		a {
+			color: $teal;
+		}
+	}
 
 	.widget-title {
 		color: $teal;
@@ -50,9 +60,17 @@ section#text-2 {
 	a {
 		font-size: .9em;
 		font-style: italic;
+		text-decoration: none;
 	}
 }
-
+#menu-category-pages li span:before {
+	content: "\00BB";
+	margin-right: 4px;
+}
+#menu-category-pages li.current-menu-item a {
+	color: $teal;
+	font-weight: bold;
+}
 // Slogan
 .widget-area #text-3 {
     background-color: $darkgray;

@@ -11,7 +11,7 @@ ul#primary-menu {
 
 .site-logo {
 	z-index: 99;
-	flex: 1 0 25%;
+	flex: 0 0 370px;
 }
 
 ul#primary-menu {
@@ -37,7 +37,12 @@ ul#primary-menu {
     height: 100%;
 }
 
-.main-navigation a {
-    color: $teal;
-    font-size: 1.4em;
+.main-navigation {
+	
+	flex: 1;
+
+	a {
+		color: $teal;
+		font-size: 1.4em;
+	}
 }
