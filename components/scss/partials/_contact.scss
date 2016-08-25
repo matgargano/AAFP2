@@ -60,3 +60,27 @@ article#post-1890 {
 
 }
 
+// PlanSo Form
+
+.form-control {
+	border-radius: 0!important;
+	height: 40px;
+}
+.form-control:focus {
+    border-color: $tomato;
+}
+
+input.required-field {
+    // border-left: 4px solid #FF8F71;
+}
+input[data-required="required"] {
+	border-left: 4px solid #FF8F71;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.planso-form-builder .container-fluid {
+    padding: 0!important;
+}
+
+
