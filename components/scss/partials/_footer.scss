@@ -32,6 +32,26 @@ ul#footer-menu {
     }
 }
 
+.widget_nav_menu {
+	
+	display: flex;
+    flex-direction: column;
+
+    li {
+		margin: .5em 0;
+
+		a {
+			font-size: 1.5em;
+			font-weight: bold;
+			color: $teal;
+		}
+		a:hover,
+		a:visited {
+			color: $teal;
+		}
+    }
+}
+
 footer .gray-bg {
 	padding: 1.2em 5em;
 }

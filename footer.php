@@ -14,16 +14,31 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="gray-bg">
+
 		<div class="row">
-			<div class="col-sm-8">
-				
-					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
-				
+			<div id="footer-sidebar" class="secondary">
+				<div id="footer-sidebar1">
+				<?php
+				if(is_active_sidebar('footer-sidebar-1')){
+				dynamic_sidebar('footer-sidebar-1');
+				}
+				?>
+				</div>
+				<div id="footer-sidebar2">
+				<?php
+				if(is_active_sidebar('footer-sidebar-2')){
+				dynamic_sidebar('footer-sidebar-2');
+				}
+				?>
+				</div>
+				<div id="footer-sidebar3">
+				<?php
+				if(is_active_sidebar('footer-sidebar-3')){
+				dynamic_sidebar('footer-sidebar-3');
+				}
+				?>
+				</div>
 			</div>
-			<div class="col-sm-4">Social<br>Icons<br>Here
-			</div>
-		</div>
 		</div>
 
 		<div class="row">

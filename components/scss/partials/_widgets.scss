@@ -1,0 +1,38 @@
+#footer-sidebar {
+	display:flex;
+	justify-content: space-between;
+	background-color: $lightgray;
+}
+#footer-sidebar > div {
+	flex: 0 1 33.33%;
+}
+
+#footer-sidebar1 {
+	float: left;
+	width: 340px;
+	margin-left:5px;
+	margin-right:5px;
+	display: flex;
+	align-items: center;
+}
+
+#footer-sidebar2 {
+float: left;
+width: 340px;
+margin-right:5px;
+}
+
+#footer-sidebar3 {
+float: left;
+width: 340px;
+}
+
+.widget_nav_menu {
+    margin-bottom: 0;
+}
+
+// Social Icons
+footer .norm_row.sfsi_wDiv {
+    display: flex;
+    width: auto!important;
+}

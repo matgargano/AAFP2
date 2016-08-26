@@ -14,6 +14,11 @@ get_sidebar('category-page'); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<?php
+		if ( function_exists('yoast_breadcrumb') ) {
+		     yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+		}
+		?>
 
 
 			<?php
