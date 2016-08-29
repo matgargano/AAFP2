@@ -22,10 +22,11 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-<div class="container">
+<div class="site-wrap">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aafp' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<div class="content-wrap">
 
 		<?php // Display site icon or first letter as logo ?>	
 			<div class="site-logo">
@@ -39,10 +40,11 @@
 				</a>
 			</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'aafp' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'aafp' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
+		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="outter-wrap">

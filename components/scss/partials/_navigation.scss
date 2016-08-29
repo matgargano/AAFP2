@@ -74,6 +74,14 @@ ul.topics-list {
   	underline: none;
   }
 }
+
+@media screen and (max-width: 920px) {
+
+  ul#primary-menu {
+    font-size: .85em;
+  }
+
+}
 /* .widget-area .current-menu-item {
 	font-weight: bold;
 	

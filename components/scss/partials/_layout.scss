@@ -1,8 +1,26 @@
+.outter-wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.content-wrap {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+
+
+
 
 
 .site-content {
-    display: flex;
-    flex-flow: row wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+
+/*     display: flex;
+    flex-flow: row wrap; */
 }
 
 .site-main {
@@ -16,14 +34,3 @@
 }
 
 
-.featured-image {
-    margin: 0;
-    border-top: 3px solid $teal-lt;
-    border-bottom: 3px solid $teal-lt;
-}
-
-.widget-area blockquote {
-    background-color: #fff;
-    margin: 0 10%;
-    font-size: 75%;
-}

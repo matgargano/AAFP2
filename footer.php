@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-		<div class="row">
+		<div class="">
 			<div id="footer-sidebar" class="secondary">
 				<div id="footer-sidebar1">
 				<?php
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="">
 		
 		
 			<div class="col-sm-12 aafp-foot">

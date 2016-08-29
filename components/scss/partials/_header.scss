@@ -9,12 +9,28 @@ ul#primary-menu {
     justify-content: flex-end;
 }
 
-.site-logo {
-	z-index: 99;
-	flex: 0 1 41.66%;
+header .content-wrap {
+	display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    width: 100%;
 }
 
-ul#primary-menu {
+.main-navigation {
+	
+	flex: 0 1 65%;
+	color: $teal;
+	font-size: 1.4em;
+
+}
+
+.site-logo {
+	z-index: 99;
+	flex: 1;
+	padding: 0 10px;
+}
+
+#primary-menu {
 
 	height: 100%;
 
@@ -23,7 +39,7 @@ ul#primary-menu {
 	    display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 0 10px;
+		padding: 10px;
 		text-align: center;
 		flex: 1;
 	}
@@ -37,12 +53,3 @@ ul#primary-menu {
     height: 100%;
 }
 
-.main-navigation {
-	
-	flex: 0 1 58.33%;
-
-	a {
-		color: $teal;
-		font-size: 1.4em;
-	}
-}
