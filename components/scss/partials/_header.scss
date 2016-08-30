@@ -11,23 +11,30 @@ ul#primary-menu {
 
 header .content-wrap {
 	display: flex;
-    padding: 10px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     justify-content: space-between;
     width: 100%;
 }
 
 .main-navigation {
-	
-	flex: 0 1 65%;
+	flex: 1;
 	color: $teal;
-	font-size: 1.4em;
-
+	font-size: .9em;
 }
+
+/*--------------------------------------------------------------
+## Logo
+--------------------------------------------------------------*/
 
 .site-logo {
 	z-index: 99;
-	flex: 1;
-	padding: 0 10px;
+	flex: 1 1 30%;
+	padding: 0;
+}
+
+#site-navigation {
+	flex: 1 1 70%;
 }
 
 #primary-menu {

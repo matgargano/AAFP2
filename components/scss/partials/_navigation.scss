@@ -6,8 +6,9 @@ ul#primary-menu li.current_page_ancestor {
     border-bottom: 4px solid $tomato;
 }
 
-
-// Secondary nav menu
+/*--------------------------------------------------------------
+## Categories Nav Menu (Home Page)
+--------------------------------------------------------------*/
 
 #secondary-menu {
 	list-style: none;
@@ -75,6 +76,27 @@ ul.topics-list {
   }
 }
 
+.widget {
+  margin: 1.5em 0;
+}
+
+.widget_nav_menu {
+
+  a:before {
+    content: "\203A";
+    margin-right: 6px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+}
+
+.widget_nav_menu .current_page_item .sub-menu {
+  font-weight: normal;
+}
+
 @media screen and (max-width: 920px) {
 
   ul#primary-menu {
@@ -82,6 +104,8 @@ ul.topics-list {
   }
 
 }
+
+
 /* .widget-area .current-menu-item {
 	font-weight: bold;
 	

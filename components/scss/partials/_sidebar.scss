@@ -1,5 +1,4 @@
 .widget-area {
-    flex: 0 0 370px;
     background-color: $lightgray;
 	// padding: 0 2em;
 
@@ -32,7 +31,7 @@ section#text-2 {
 .widget_nav_menu,
 .menu-category-pages {
 
-	padding: 0 15%;
+	padding: 0 2em;
 
 	.current_menu_item,
 	.current_page_item {

@@ -47,4 +47,4 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="outter-wrap">
+	<div id="main-wrap" class="content-wrap">

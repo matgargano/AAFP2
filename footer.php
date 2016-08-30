@@ -15,8 +15,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-		<div class="">
-			<div id="footer-sidebar" class="secondary">
+		<div class="widget-row">
+			<div id="footer-sidebar" class="content-wrap widget-wrap">
 				<div id="footer-sidebar1">
 				<?php
 				if(is_active_sidebar('footer-sidebar-1')){
@@ -41,14 +41,12 @@
 			</div>
 		</div>
 
-		<div class="">
-		
-		
 			<div class="col-sm-12 aafp-foot">
 				<img id="aafp-logo" src="http://localhost/aafp/wp-content/uploads/2016/08/aafp-logo.png">
 				<p>Created by the American Association of Feline Practitioners<br>© Copyright 2016 AAFP</p>
 			</div>
-		</div>
+
+		
 		
 	
 	</footer><!-- #colophon -->

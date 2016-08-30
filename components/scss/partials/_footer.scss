@@ -8,6 +8,10 @@
     margin-right: 20px;
 }
 
+.widget-row {
+	background-color: $lightgray;
+}
+
 .aafp-foot {
 	padding-top: 20px;
     padding-bottom: 20px;
@@ -41,8 +45,8 @@ ul#footer-menu {
 		margin: .5em 0;
 
 		a {
-			font-size: 1.5em;
-			font-weight: bold;
+			font-size: 1em;
+			// font-weight: bold;
 			color: $teal;
 		}
 		a:hover,

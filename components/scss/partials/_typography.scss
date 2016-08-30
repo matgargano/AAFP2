@@ -1,3 +1,5 @@
+html {font-size: 16px;}
+
 body,
 button,
 input,
@@ -10,8 +12,12 @@ textarea {
 	line-height: 1.5;
 }
 
-.site-content {
-	font-size: 1.6em;
+
+body {
+	font-size: 1em;
+}
+.site-main {
+	font-size: 1em;
 }
 
 h1,
@@ -34,8 +40,8 @@ h2 { font-size: 1.375em; }
 h3 { font-size: 1.25em; }
 h4 { font-size: 1.125em; }
 h5 { font-size: 1em; }
-h6 { font-size: .875em; }
-p { font-size: .85em; }
+h6 { font-size: .9em; }
+p { font-size: .95em; }
 
 
 
@@ -48,11 +54,14 @@ p { font-size: .85em; }
 	font-size: 1rem;
 	line-height: 1.6em;
 }
+.widget-nav-menu {
+	font-weight: normal;
+}
 
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 480px) {
 
 	.site-main {
-		font-size: 1em;
+		font-size: .85em;
 		// line-height: 1.6em;
 	}
 

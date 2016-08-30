@@ -2,31 +2,37 @@
 	display: flex;
 	border-bottom: 5px solid $teal-lt;
 	margin-bottom: 1em;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0; 
+    margin-left: -20px;
+    margin-right: -20px; 
 
 	.bg-img {
 		background-image: url("http://localhost/aafp/wp-content/uploads/2016/08/Branding-Static-Cat-purchased.jpg");
 	    background-size: contain;
 	    background-repeat: no-repeat;
-        width: 40%;
+        width: 30%;
         float: left;
-        flex: 1 1 35%;
+        flex: 1 1 30%;
 	    padding: 0;
 	    background-position-y: bottom;
 	    background-position-x: center;
 	}
 	.slider-col {
 		padding: 0;
-        width: 65%;
+        width: 70%;
         float: right;
-        flex: 1 1 65%;
+        flex: 1 1 70%;
 	}
 }
 @media screen and (max-width: 768px) {
     .slider-col {
     	width: 100%;
+        flex: 1 1 100%
+    }
+    .bg-img {
+        background-image: none;
+        width: 0;
+        flex: 0 1 0%;
+        display: none;
     }
 }
 
@@ -35,44 +41,3 @@
     justify-content: space-between;
 }
 
-.button-wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 55px;
-}
-
-a.button {
-    padding: .3em;
-    border: 2px solid $lightgray;
-    border-radius: 10px;
-    width: 280px;
-    margin-bottom: 20px;
-    color: #767676;
-    text-decoration: none;
-
-    // vertical-align: middle;
-
-    i {
-        margin: .5em;
-        color: #fff;
-    }
-}
-
-.button-inner {
-    border-radius: 5px;
-    background-color: $teal-lt;
-    display: flex;
-
-    span {
-        background-color: #fff;
-		padding: .2em 1em;
-		border: 2px solid #b2eae4;
-		border-bottom-right-radius: 5px;
-		border-top-right-radius: 5px;
-		width: 100%;
-		display: flex;
-    	align-items: center;
-    }
-}

@@ -5,13 +5,31 @@
 
 .content-wrap {
     max-width: 1170px;
-    padding: 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
-
 }
 
+.content-container {
+    padding: 0 15px;
+}
 
+#primary {
+    display: flex;
+}
+.primary.home {
+    padding: 0 20px;
+    padding: 0 3vw;
+}
+.widget-area {
+    flex: 0 0 350px;
+    margin-right: 30px;
+}
 
+.secondary {
+    width: 340px;
+    flex: 0 0 340px;
+    margin-right: 4%;
+}
 
 
 
@@ -24,7 +42,7 @@
 }
 
 .site-main {
-    padding: 0 2em;
+    flex: 1;
 }
 
 .content-area {
@@ -33,4 +51,18 @@
     flex: 1 1 400px;
 }
 
+footer {
+    margin-top: 2em;
+}
 
+@media screen and (max-width: 920px) {
+    #secondary {
+        display: none;
+    }
+    #primary {
+        display: block;
+    }
+    .button-wrap {
+        margin-top: 0;
+    }
+}
