@@ -7,8 +7,43 @@ ul#primary-menu li.current_page_ancestor {
 }
 
 /*--------------------------------------------------------------
+## SlickNav
+--------------------------------------------------------------*/
+
+.slicknav_brand {
+  height: 90px;
+  overflow: visible;
+
+  a {
+    display: flex;
+
+    img {
+      z-index: 999;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slicknav_nav li a {
+      padding: 12px 10px;
+  }
+}
+.slicknav_nav {
+  background-color: $teal;
+
+  li {
+    border-top: 1px solid #fff;
+  }
+}
+
+
+/*--------------------------------------------------------------
 ## Categories Nav Menu (Home Page)
 --------------------------------------------------------------*/
+
+nav#secondary-navigation button {
+  display: none;
+}
 
 #secondary-menu {
 	list-style: none;
@@ -20,12 +55,17 @@ ul#primary-menu li.current_page_ancestor {
 }
 
 #secondary-menu li {
+
+    flex: 1 0 100px;
+    display: flex;
+    margin: .6em;
+    justify-content: center;
 	
 
 	a {
 	    display: flex;
     	flex-direction: column;
-    	margin: 1em;
+    	margin: 0;
     	border-radius: 6px;
     	background-color: #767676;
     	background-color: $lightgray;

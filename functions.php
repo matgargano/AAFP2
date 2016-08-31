@@ -152,6 +152,11 @@ function aafp_scripts() {
 	// Add Google Fonts: Raleway
 	wp_enqueue_style( 'aafp-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' );
 
+
+
+	// Enqueue FontAwesome
+	wp_enqueue_style( 'fontawesome-font', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+
 	// Enqueue Bootstrap Javascript
 	wp_enqueue_script( 'bootstrap-scripts', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' );	
 

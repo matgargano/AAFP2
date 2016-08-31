@@ -1,7 +1,13 @@
 .site-header {
 	display: flex;
-	max-height: 80px;
+	max-height: 120px;
 	justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+	.site-header {
+	    display: none;
+	}
 }
 
 ul#primary-menu {
@@ -29,12 +35,12 @@ header .content-wrap {
 
 .site-logo {
 	z-index: 99;
-	flex: 1 1 30%;
+	flex: 1 1 33%;
 	padding: 0;
 }
 
 #site-navigation {
-	flex: 1 1 70%;
+	flex: 1 1 67%;
 }
 
 #primary-menu {

@@ -65,4 +65,37 @@ footer {
     .button-wrap {
         margin-top: 0;
     }
+    .entry-header {
+        margin: 0 -20px;
+    }
+    .entry-header h1 {
+        padding: 1em 0;
+        text-align: center;
+    }
 }
+
+
+
+/*--------------------------------------------------------------
+## Mobile Layout
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+
+    #breadcrumbs {
+        display: none;
+    }
+
+    .featured-image {
+        display: none;
+    }
+
+    .site-main h1 {
+        background-color: $teal;
+        color: #fff;
+    }
+
+}
+
+

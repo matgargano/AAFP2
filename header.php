@@ -36,7 +36,7 @@
 					<div class="screen-reader-text">
 						<?php printf( esc_html__('Go to the home page of %1$s', 'ckpersonal'), $site_title ); ?>	
 					</div>
-					<img src="http://localhost/aafp/wp-content/uploads/2016/08/Logo-main.png">
+					<img src="http://aafp.randjsc.com/wp-content/uploads/2016/08/Logo-main.png">
 				</a>
 			</div>
 

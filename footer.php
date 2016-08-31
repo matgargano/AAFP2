@@ -41,8 +41,8 @@
 			</div>
 		</div>
 
-			<div class="col-sm-12 aafp-foot">
-				<img id="aafp-logo" src="http://localhost/aafp/wp-content/uploads/2016/08/aafp-logo.png">
+			<div class="container aafp-foot">
+				<img id="aafp-logo" src="http://aafp.randjsc.com/wp-content/uploads/2016/08/aafp-logo.png">
 				<p>Created by the American Association of Feline Practitioners<br>© Copyright 2016 AAFP</p>
 			</div>
 

@@ -4,28 +4,35 @@
 	flex-flow: row wrap;
 }
 #footer-sidebar > div {
-	flex: 1 1 220px;
-	padding: 0 1em;
+	flex: 1 1 350px;
+    padding: 0 1em;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 #footer-sidebar1 {
 	float: left;
-	width: 340px;
+	width: 350px;
 	margin-left:5px;
 	margin-right:5px;
 	display: flex;
 	align-items: center;
 }
 
-#footer-sidebar2 {
+#footer-sidebar #footer-sidebar2 {
 float: left;
-width: 340px;
-margin-right:5px;
+width: 0;
+margin-right:0;
+flex: 0 0 0px;
+display: none;
 }
 
-#footer-sidebar3 {
+#footer-sidebar #footer-sidebar3 {
 float: left;
-width: 340px;
+width: 350px;
+justify-content: center;
+display: flex;
+
 }
 
 .widget_nav_menu {
