@@ -89,13 +89,16 @@ nav#secondary-navigation button {
 
 ul.topics-list {
 
-  columns: 2;
   margin-bottom: 3em;
   max-width: 90%;
   font-size: .95em;
   font-weight: 500;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 
   li {
+    flex: 0 1 300px;
     margin-bottom: .6em;
   }
 
@@ -106,10 +109,10 @@ ul.topics-list {
   a:hover {
     color: $tomato;
   }
-  a:before {
-    content: "\203A";
+  /* a:before {
+    content: "\00BB";
     margin-right: 6px;
-  }
+  } */
   a:hover:before {
   	text-decoration: none;
   	underline: none;
@@ -122,10 +125,10 @@ ul.topics-list {
 
 .widget_nav_menu {
 
-  a:before {
-    content: "\203A";
+  /* a:before {
+    content: "\00BB";
     margin-right: 6px;
-  }
+  } */
 
   a:hover {
     text-decoration: none;
