@@ -3,10 +3,32 @@
 	max-height: 120px;
 	justify-content: space-between;
 }
+.slicknav_brand {
+	position: absolute;
+}
 
 @media screen and (max-width: 768px) {
 	.site-header {
 	    display: none;
+	}
+
+	.slicknav_brand {
+		/* height: 80px; */
+		overflow: visible;
+		max-width: 180px;
+		width: 120px;
+		display: flex;
+
+		a {
+			display: block;
+			height: auto;
+    		flex: 1;
+
+    		img {
+    			width: 100%;
+    			height: auto;
+    		}
+		}
 	}
 }
 

@@ -59,7 +59,8 @@ ul {
 ## Buttons
 --------------------------*/
 
-.button-wrap {
+.button-wrap,
+.button-wrap-parent > .textwidget {
     display: flex;
     justify-content: space-between;
     flex-direction: column;

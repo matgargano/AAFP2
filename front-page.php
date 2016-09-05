@@ -46,10 +46,11 @@ get_header(); ?>
 
 	</main>
 	<div class="secondary home">
-		<div class="button-wrap">
+	<?php get_sidebar('home-page'); ?>
+		<!-- <div class="button-wrap">
 			<a class="button" href="#"><div class="button-inner"><i class="fa fa-fw fa-stethoscope fa-2x" aria-hidden="true"></i><span>Find a Veterinariar <br>or Practice</span></div></a>
 			<a class="button" href="#"><div class="button-inner"><i class="fa fa-fw fa-envelope fa-2x" aria-hidden="true"></i><span>Join our <br>Mailing List</span></div></a>
-		</div>
+		</div> -->
 	</div>
 </section><!-- #primary -->
 

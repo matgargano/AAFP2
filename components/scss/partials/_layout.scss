@@ -24,7 +24,9 @@
     flex: 0 0 350px;
     margin-right: 30px;
 }
-
+#sidebar-home {
+    margin: 0 0 0 50px;
+}
 .secondary {
     width: 340px;
     flex: 0 0 340px;
@@ -62,7 +64,11 @@ footer {
     #primary {
         display: block;
     }
-    .button-wrap {
+    #sidebar-home {
+        margin: 0 0 0 0;
+    }
+    .button-wrap,
+    .button-wrap-parent > .textwidget {
         margin-top: 0;
     }
     .entry-header {
@@ -83,10 +89,8 @@ footer {
 @media screen and (max-width: 840px) {
 
 
-    #breadcrumbs {
-        display: none;
-    }
-
+    #breadcrumbs,
+    .sidebar,
     .featured-image {
         display: none;
     }
