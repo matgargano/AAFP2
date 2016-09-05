@@ -2,8 +2,8 @@
 	display: flex;
 	border-bottom: 5px solid $teal-lt;
 	margin-bottom: 1em;
-    margin-left: -20px;
-    margin-right: -20px; 
+/*     margin-left: -20px;
+    margin-right: -20px;  */
 
 	.bg-img {
 		background-image: url("http://aafp.randjsc.com/wp-content/uploads/2016/08/Branding-Static-Cat-purchased.jpg");
@@ -28,7 +28,7 @@
 	}
 
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .row-slider {
         width: 100vw;
     }
@@ -57,7 +57,7 @@
     background-color: transparent;
 }
 
-@media screen and (max-width: 920px) {
+@media only screen and (max-width: 920px) {
 
     .secondary.home {
         .button-wrap,
@@ -65,9 +65,8 @@
             margin-top: 0;
             text-align: center;
             display: flex;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-flow: row wrap;
         }
     }
 

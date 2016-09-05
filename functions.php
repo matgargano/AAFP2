@@ -42,7 +42,7 @@ function aafp_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(828, 240, true );
-	add_image_size( 'aafp-featured-thumb', 260, 300, true );
+	add_image_size( 'category-menu-thumbnail', 300, 320, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

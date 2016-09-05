@@ -39,8 +39,7 @@ ul#primary-menu {
 
 header .content-wrap {
 	display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
+	padding: 1em 0;
     justify-content: space-between;
     width: 100%;
 }
@@ -58,7 +57,7 @@ header .content-wrap {
 .site-logo {
 	z-index: 99;
 	flex: 1 1 33%;
-	padding: 0;
+	padding: 0 0 0 1em;
 }
 
 #site-navigation {
