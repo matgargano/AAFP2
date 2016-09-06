@@ -11,13 +11,16 @@ ul#primary-menu li.current_page_ancestor {
 --------------------------------------------------------------*/
 
 .slicknav_brand {
-  height: 90px;
   overflow: visible;
 
   img {
     z-index: 999;
   }
   
+}
+
+.slicknav_menu {
+  height: 65px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -110,11 +113,6 @@ nav#secondary-navigation button {
 
 .widget_nav_menu {
 
-  /* a:before {
-    content: "\00BB";
-    margin-right: 6px;
-  } */
-
   a:hover {
     text-decoration: none;
   }
@@ -157,6 +155,3 @@ nav#secondary-navigation button {
 ## Mobile Nav
 --------------------------------------------------------------*/
 
-.slicknav_menu {
-  height: 55px;
-}

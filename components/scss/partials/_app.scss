@@ -212,3 +212,11 @@ ul.topics-list {
     underline: none;
   }
 }
+
+@media screen and (max-width: 840px) {
+
+  ul.topics-list {
+    margin: 1.1em 0 0;
+  }
+
+}
