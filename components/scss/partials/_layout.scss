@@ -20,7 +20,7 @@
     display: flex;
 }
 .primary {
-    margin: 0 1.5em;
+    margin: 0 1.5rem;
 }
 .primary.home {
     /* padding: 0 20px;
@@ -80,6 +80,11 @@ footer {
     margin-top: 2em;
 }
 
+
+/*--------------------------------------------------------------
+## Mobile Layout
+--------------------------------------------------------------*/
+
 @media screen and (max-width: 840px) {
     #secondary {
         display: none;
@@ -95,40 +100,31 @@ footer {
         margin-top: 0;
     }
     .entry-header {
-        background-color: #60A5A8;
-        color: #fff;
-        margin-left: -2rem;
-        margin-right: -2rem;
-        padding: 1em 0;
+        border-bottom: none;
     }
-    h1.entry-title {
-        padding: 0;
-        margin: 0;
+    .entry-title, 
+    .category-title {
+        background-color: $teal;
+        color: #fff;
+        
+        margin: 0 -1.5rem 1.5em;
         text-align: center;
-        color: #fff;
+        line-height: 50px;
     }
-}
-
-
-
-/*--------------------------------------------------------------
-## Mobile Layout
---------------------------------------------------------------*/
-
-@media screen and (max-width: 840px) {
-
+    .entry-title::before {
+        content: "You Care, We Care, Cat Care. Find it Here.";
+        display: block;
+        color: #fff;
+        background-color: $darkgray;
+        font-size: 65%;
+        font-style: italic;
+        line-height: 50px;
+        font-weight: 600;
+    }
 
     #breadcrumbs,
     .sidebar,
     .featured-image {
         display: none;
     }
-
-    .site-main h1 {
-        background-color: $teal;
-        color: #fff;
-    }
-
 }
-
-

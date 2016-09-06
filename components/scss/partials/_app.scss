@@ -1,3 +1,9 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .site-logo img {
   // visibility: hidden;
 }
@@ -64,7 +70,6 @@ ul {
     justify-content: flex-end;
     flex-flow: row wrap;
     align-items: flex-end;
-    margin-top: 82px;
 }
 
 a.button {
@@ -91,14 +96,15 @@ a.button {
     flex: 1;
 
     span {
-        background-color: #fff;
-    padding: .2em 1em;
-    border: 2px solid #b2eae4;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    width: 100%;
-    display: flex;
+      background-color: #fff;
+      padding: .2em 1em;
+      border: 2px solid #b2eae4;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+      display: flex;
       align-items: center;
+      text-align: left;
     }
 }
 
@@ -175,7 +181,7 @@ ul.topics-list {
 
   margin-bottom: 3em;
   max-width: 90%;
-  font-size: .95em;
+  // font-size: .95em;
   font-weight: 500;
   display: flex;
   flex-flow: row wrap;
@@ -184,6 +190,10 @@ ul.topics-list {
   li {
     flex: 0 1 300px;
     margin-bottom: .6em;
+  }
+  li::before {
+    content: "\203A";
+    margin-right: 6px;
   }
 
   a {
