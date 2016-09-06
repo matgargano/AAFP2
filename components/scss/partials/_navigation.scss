@@ -11,19 +11,19 @@ ul#primary-menu li.current_page_ancestor {
 --------------------------------------------------------------*/
 
 .slicknav_brand {
-  height: 90px;
   overflow: visible;
 
-  a {
-    display: flex;
-
-    img {
-      z-index: 999;
-    }
+  img {
+    z-index: 999;
   }
+  
 }
 
-@media screen and (max-width: 768px) {
+.slicknav_menu {
+  height: 65px;
+}
+
+@media only screen and (max-width: 768px) {
   .slicknav_nav li a {
       padding: 12px 10px;
   }
@@ -36,7 +36,6 @@ ul#primary-menu li.current_page_ancestor {
   }
 }
 
-
 /*--------------------------------------------------------------
 ## Categories Nav Menu (Home Page)
 --------------------------------------------------------------*/
@@ -46,20 +45,24 @@ nav#secondary-navigation button {
 }
 
 #secondary-menu {
-	list-style: none;
-    margin: 0 0 2em 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
+  position: relative;
+  list-style: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 #secondary-menu li {
 
-    flex: 1 0 100px;
-    display: flex;
-    margin: .6em;
-    justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  flex: 1;
+  margin: 15px;
+  height: auto;
+  // display: flex;
+  // justify-content: center;
 	
 
 	a {
@@ -76,7 +79,9 @@ nav#secondary-navigation button {
 		padding-bottom: 0;
 		border-bottom: 4px solid $tomato;
 		border-top-left-radius: 6px;
-    	border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+    height: auto;
 	}
 
 	.menu-image-title {
@@ -87,48 +92,26 @@ nav#secondary-navigation button {
 	}
 }
 
-ul.topics-list {
-
-  margin-bottom: 3em;
-  max-width: 90%;
-  font-size: .95em;
-  font-weight: 500;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-  li {
-    flex: 0 1 300px;
-    margin-bottom: .6em;
-  }
-
-  a {
-    color: #000;
-    cursor: auto;
-  }
-  a:hover {
-    color: $tomato;
-  }
-  /* a:before {
-    content: "\00BB";
-    margin-right: 6px;
-  } */
-  a:hover:before {
-  	text-decoration: none;
-  	underline: none;
+@media only screen and (max-width: 992px) {
+  #secondary-menu li {
+    width: 33.33%;
+    flex-grow: 0;
+    flex-basis: calc(33.33% - 30px);
   }
 }
 
-.widget {
-  margin: 1.5em 0;
+@media only screen and (max-width: 740px) {
+  #secondary-menu li {
+    flex-basis: calc(33.33% - 30px);
+  }
+}
+@media only screen and (max-width: 540px) {
+  #secondary-menu li {
+    flex-basis: calc(50% - 30px);
+  }
 }
 
 .widget_nav_menu {
-
-  /* a:before {
-    content: "\00BB";
-    margin-right: 6px;
-  } */
 
   a:hover {
     text-decoration: none;
@@ -140,7 +123,7 @@ ul.topics-list {
   font-weight: normal;
 }
 
-@media screen and (max-width: 920px) {
+@media only screen and (max-width: 920px) {
 
   ul#primary-menu {
     font-size: .85em;
@@ -167,3 +150,8 @@ ul.topics-list {
     display: flex;
     flex-wrap: wrap;
 } */
+
+/*--------------------------------------------------------------
+## Mobile Nav
+--------------------------------------------------------------*/
+

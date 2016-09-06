@@ -10,7 +10,7 @@
 
 get_header(); ?> 
 
-	<section id="primary" class="">
+	<section id="primary" class="primary category-page">
 
 		<?php get_sidebar('category-page'); ?>
 		

@@ -1,3 +1,9 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .site-logo img {
   // visibility: hidden;
 }
@@ -6,7 +12,6 @@
   color: inherit;
 
 }
-
 
 /*
 ## Links
@@ -59,12 +64,12 @@ ul {
 ## Buttons
 --------------------------*/
 
-.button-wrap {
+.button-wrap,
+.button-wrap-parent > .textwidget {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: flex-end;
+    flex-flow: row wrap;
     align-items: flex-end;
-    margin-top: 82px;
 }
 
 a.button {
@@ -75,7 +80,7 @@ a.button {
     text-decoration: none;
     width: 280px;
     height: 78px;
-    margin: 0 1.2em 1em 1.2em;
+    margin-bottom: 2em;
     display: flex;
 
     i {
@@ -91,14 +96,15 @@ a.button {
     flex: 1;
 
     span {
-        background-color: #fff;
-    padding: .2em 1em;
-    border: 2px solid #b2eae4;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    width: 100%;
-    display: flex;
+      background-color: #fff;
+      padding: .2em 1em;
+      border: 2px solid #b2eae4;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+      display: flex;
       align-items: center;
+      text-align: left;
     }
 }
 
@@ -108,6 +114,9 @@ a.button {
     border-bottom: 3px solid $teal-lt;
 }
 
+/*--------------------------------------------------------------
+## Blockquotes
+--------------------------------------------------------------*/
 
 blockquote {
     border-top: 4px solid $teal-lt;
@@ -151,6 +160,11 @@ blockquote::before{
   top: 0;
 }
 
+
+/*
+## Blockquotes in Sidebars
+--------------------------*/
+
 .widget-area blockquote {
     background-color: #fff;
     margin: 0 10%;
@@ -158,14 +172,51 @@ blockquote::before{
 }
 
 
-.entry-header {
-  border-bottom: 1px solid $teal; 
+
+/*--------------------------------------------------------------
+## Topics Loop on Category Pages
+--------------------------------------------------------------*/
+
+ul.topics-list {
+
+  margin-bottom: 3em;
+  max-width: 90%;
+  // font-size: .95em;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  li {
+    flex: 0 1 300px;
+    margin-bottom: .6em;
+  }
+  li::before {
+    content: "\203A";
+    margin-right: 6px;
+  }
+
+  a {
+    color: #000;
+    cursor: auto;
+  }
+  a:hover {
+    color: $tomato;
+  }
+  /* a:before {
+    content: "\00BB";
+    margin-right: 6px;
+  } */
+  a:hover:before {
+    text-decoration: none;
+    underline: none;
+  }
 }
 
-.entry-title,
-.category-title {
-  color: $teal;
-}
-.category-title {
-  margin-bottom: .8em;
+@media screen and (max-width: 840px) {
+
+  ul.topics-list {
+    margin: 1.1em 0 0;
+  }
+
 }

@@ -42,7 +42,7 @@ function aafp_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(828, 240, true );
-	add_image_size( 'aafp-featured-thumb', 260, 300, true );
+	//add_image_size( 'category-menu-thumbnail', 300, 320, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -104,6 +104,15 @@ function aafp_widgets_init() {
 		'id'            => 'sidebar-2',
 		'description'   => esc_html__( 'Add widgets here.', 'aafp' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Homepage Sidebar', 'aafp' ),
+		'id'            => 'sidebar-3',
+		'description'   => esc_html__( 'Add widgets here.', 'aafp' ),
+		'before_widget' => '<section id="%1$s" class="button-wrap-parent widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',

@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="">
+	<section id="primary" class="primary page">
 
 		<?php get_sidebar(); ?>
 		

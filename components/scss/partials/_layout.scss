@@ -5,26 +5,34 @@
 
 .content-wrap {
     max-width: 1170px;
-    padding: 0 20px;
+    // padding: 0 20px;
     margin: 0 auto;
 }
 
-.content-container {
+/* .content-container {
     padding: 0 15px;
+} */
+.entry-content {
+    // padding: 0 2rem;
 }
 
 #primary {
     display: flex;
 }
+.primary {
+    margin: 0 1.5rem;
+}
 .primary.home {
-    padding: 0 20px;
-    padding: 0 3vw;
+    /* padding: 0 20px;
+    padding: 0 3vw; */
 }
 .widget-area {
     flex: 0 0 350px;
     margin-right: 30px;
 }
-
+#sidebar-home {
+    margin: 82px 0 0 50px;
+}
 .secondary {
     width: 340px;
     flex: 0 0 340px;
@@ -51,9 +59,31 @@
     flex: 1 1 400px;
 }
 
+/*--------------------------------------------------------------
+## 
+--------------------------------------------------------------*/
+
+.entry-header {
+  border-bottom: 1px solid $teal; 
+}
+
+.entry-title,
+.category-title {
+  color: $teal;
+  // padding: 0 0 0 2rem;
+}
+.category-title {
+  margin-bottom: .8em;
+}
+
 footer {
     margin-top: 2em;
 }
+
+
+/*--------------------------------------------------------------
+## Mobile Layout
+--------------------------------------------------------------*/
 
 @media screen and (max-width: 840px) {
     #secondary {
@@ -62,40 +92,48 @@ footer {
     #primary {
         display: block;
     }
-    .button-wrap {
+    #sidebar-home {
+        margin: 0 0 0 0;
+    }
+    .button-wrap,
+    .button-wrap-parent > .textwidget {
         margin-top: 0;
     }
     .entry-header {
-        margin: 0 -20px;
+        border-bottom: none;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
     }
-    .entry-header h1 {
-        padding: 1em 0;
+    .entry-title, 
+    .category-title {
+        background-color: $teal;
+        color: #fff;
+        margin: 0;
+        
+        // margin: 0 -1.5rem 1.5em;
         text-align: center;
-    }
-}
-
-
-
-/*--------------------------------------------------------------
-## Mobile Layout
---------------------------------------------------------------*/
-
-@media screen and (max-width: 840px) {
-
-
-    #breadcrumbs {
-        display: none;
+        line-height: 60px;
     }
 
+    .category-title {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
+    .entry-title::before {
+        content: "You Care, We Care, Cat Care. Find it Here.";
+        display: block;
+        color: #fff;
+        background-color: $darkgray;
+        font-size: 60%;
+        font-style: italic;
+        line-height: 60px;
+        font-weight: 500;
+    }
+
+    #breadcrumbs,
+    .sidebar,
     .featured-image {
         display: none;
     }
-
-    .site-main h1 {
-        background-color: $teal;
-        color: #fff;
-    }
-
 }
-
-
