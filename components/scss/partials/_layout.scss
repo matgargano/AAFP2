@@ -80,6 +80,9 @@ footer {
     margin-top: 2em;
 }
 
+/* .site-header .slogan-bar {
+    display: none;
+} */
 
 /*--------------------------------------------------------------
 ## Mobile Layout
@@ -120,20 +123,15 @@ footer {
         margin-right: -1.5rem;
     }
 
-    .entry-title::before {
-        content: "You Care, We Care, Cat Care. Find it Here.";
-        display: block;
-        color: #fff;
-        background-color: $darkgray;
-        font-size: 60%;
-        font-style: italic;
-        line-height: 60px;
-        font-weight: 500;
-    }
-
     #breadcrumbs,
     .sidebar,
     .featured-image {
         display: none;
+    }
+    .site-header > * {
+        display: none;
+    }
+    .site-header .slogan-bar {
+        display: block;
     }
 }

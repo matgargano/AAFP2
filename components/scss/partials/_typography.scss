@@ -41,7 +41,7 @@ h3 { font-size: 1.25em; }
 h4 { font-size: 1.125em; }
 h5 { font-size: 1em; }
 h6 { font-size: 1em; }
-p { font-size: .95em; }
+p { font-size: 1em; }
 
 footer .aafp-foot {
 	font-size: .7em;
@@ -66,5 +66,10 @@ footer .aafp-foot {
 		font-size: .95em;
 		// line-height: 1.6em;
 	}
-
+}
+@media screen and (max-width: 380px) {
+	// Reduces the font size for everhthing on the page.
+	.site {
+		font-size: .9em;
+	}
 }

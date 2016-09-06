@@ -22,8 +22,8 @@
  */
 function aafp_custom_header_setup() {
 	add_theme_support ( 'custom-logo', array (
-		'width' => 160,
-		'height' => 120,
+		'width' => 210,
+		'height' => 68,
 		'flex-width' => true,
 		'flex-height' => true,
 	) );

@@ -26,24 +26,33 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aafp' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="content-wrap">
-
-		<?php // Display site icon or first letter as logo ?>	
-			<div class="site-logo">
-
-				<?php $site_title = get_bloginfo( 'name' ); ?> <!-- get site title -->
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <!-- setup link that points to homepage -->
-					<div class="screen-reader-text">
-						<?php printf( esc_html__('Go to the home page of %1$s', 'ckpersonal'), $site_title ); ?>	
-					</div>
-					<img src="http://aafp.randjsc.com/wp-content/uploads/2016/08/Logo-main.png">
-				</a>
+		<div class="header-top-bar">
+			<div class="top-bar-inner">American Association of Feline Practitioners<div class="top-bar-logo-box"><img src="http://aafp.randjsc.com/wp-content/uploads/2016/08/aafp-logo.png"></div>
 			</div>
+		</div>
+		<div class="header-bottom-bar">
+			<div class="header-inner">
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'aafp' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
+			<?php // Display site icon or first letter as logo ?>	
+				<div class="site-logo">
+
+					<?php $site_title = get_bloginfo( 'name' ); ?> <!-- get site title -->
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <!-- setup link that points to homepage -->
+						<div class="screen-reader-text">
+							<?php printf( esc_html__('Go to the home page of %1$s', 'aafp'), $site_title ); ?>	
+						</div>
+						<img src="http://aafp.randjsc.com/wp-content/uploads/2016/08/Logo-main.png">
+					</a>
+				</div>
+
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'aafp' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation -->
+			</div>
+		</div>
+		<div class="slogan-bar">
+			You Care, We Care, Cat Care. Find it Here.
 		</div>
 	</header><!-- #masthead -->
 
