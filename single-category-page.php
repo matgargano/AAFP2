@@ -22,6 +22,20 @@ get_header(); ?>
 		}
 		?>
 
+		<?php 
+
+		// get an image field
+		$image = get_field('top_image');
+
+		// each image contains a custom field called 'link'
+		$link = get_field('link', $image['ID']);
+
+		// render
+		?>
+		<a href="<?php echo $link; ?>">
+			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+		</a>
+
 
 			<?php
 			while ( have_posts() ) : the_post();
