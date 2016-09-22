@@ -8,13 +8,13 @@
 
 section#text-2 {
 	margin: 0;
-	padding: 2em 0 1.5em;
+	padding: 1.85em 0 1em;
 	background-color: $darkgray;
 	color: #fff;
 	font-style: italic;
 
 	p {
-		margin: 0 0 0 8em;
+		margin: 0 0 0 90px;
 	}
 }
 
@@ -44,10 +44,11 @@ section#text-2 {
 
 	.widget-title {
 		color: $teal;
+		font-weight: bold;
 		border-bottom: 1px solid teal;
 		margin-bottom: .8em;
 		height: auto;
-		padding-bottom: .3em;
+		padding-bottom: .4em;
 	}
 
 }
@@ -55,16 +56,20 @@ section#text-2 {
 #menu-category-pages li {
 
 	margin-bottom: .5em;
+	
 
 	a {
 		font-style: italic;
 		text-decoration: none;
+		color: $darkgray;
 	}
 }
-#menu-category-pages li span:before {
-	content: "\00BB";
-	margin-right: 6px;
+#menu-category-pages li a::before {
+    // content: "»";
+    content: "\00BB";
+    margin-right: 6px;
 }
+
 #menu-category-pages li.current-menu-item a {
 	color: $teal;
 	font-weight: bold;

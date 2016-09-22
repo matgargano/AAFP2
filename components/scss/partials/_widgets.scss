@@ -44,3 +44,11 @@ footer .norm_row.sfsi_wDiv {
     display: flex;
     width: auto!important;
 }
+
+// Sidebar Blockquote widget
+.sidebar .widget_black_studio_tinymce {
+    margin: 3.5em 2em;
+}
+.sidebar.widget-area blockquote {
+	margin: 1.5em 0;
+}

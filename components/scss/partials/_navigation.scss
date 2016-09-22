@@ -197,3 +197,46 @@ nav#secondary-navigation button {
 ## Mobile Nav
 --------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------
+## Sidebar 'All Pages' Nav Menu (pages)
+--------------------------------------------------------------*/
+
+// Show ONLY the CURRENT page and it's children, by hiding siblings and unhiding the current item and it's children
+
+.widget_pages .widget-title {
+  display: none;
+}
+.widget_pages li {
+    display: none;
+}
+.widget_pages li.current_page_item {
+    display: list-item;
+}
+.widget_pages li.current_page_item > .children li {
+    display: list-item;
+
+    a {
+      color: $darkgray;
+      line-height: 2;
+      font-style: italic;
+    }
+}
+.widget_pages li.current_page_item > a {
+    font-size: 1.2em;
+    color: $teal;
+    font-weight: bold;
+    padding-bottom: .4em;
+    border-bottom: 1px solid $teal;
+    text-decoration: none;
+
+}
+.widget_pages li.current_page_item > .children {
+    margin-top: 1.5em;
+    font-size: .95em;
+
+}
+// Styles for pages menu 
+.widget_pages {
+    margin: 1.5em 13% 3em;
+}
