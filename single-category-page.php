@@ -1,7 +1,6 @@
 <?php
 /**
- * 
- *
+ * The template for displaying all 'Category Pages' custom post type. 
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -32,9 +31,9 @@ get_header(); ?>
 
 		// render
 		?>
-		<a href="<?php echo $link; ?>">
+		<figure class="featured-image">
 			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-		</a>
+		</figure>
 
 
 			<?php

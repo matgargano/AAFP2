@@ -12,14 +12,15 @@ section#text-2 {
 	background-color: $darkgray;
 	color: #fff;
 	font-style: italic;
+	font-size: .875em;
 
 	p {
 		margin: 0 0 0 90px;
 	}
 }
 
-.widget_nav_menu {
-    margin-bottom: 4em;
+.sidebar .widget_nav_menu {
+    margin-bottom: 3.5em;
 
     a,
     a:hover,

@@ -1,3 +1,6 @@
+.site-footer {
+	font-size: .875em;
+}
 .gray-bg {
 	background-color: $lightgray;
 }
@@ -12,12 +15,9 @@
 	background-color: $lightgray;
 }
 
-.aafp-foot {
-	padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-ul#footer-menu {
+
+/* ul#footer-menu {
     display: flex;
     flex-direction: column;
 
@@ -33,28 +33,30 @@ ul#footer-menu {
 		a:visited {
 			color: $teal;
 		}
-    }
-}
 
-.widget_nav_menu {
+    }
+    
+} */
+
+// Footer Nav Menu
+#menu-footer-menu {
+
+	line-height: 2;
+    padding: .8em 0;
+
+	a {
+		font-weight: bold;
+	}
 	
-	display: flex;
-    flex-direction: column;
-
-    li {
-		margin: .5em 0;
-
-		a {
-			font-size: 1em;
-			// font-weight: bold;
-			color: $teal;
-		}
-		a:hover,
-		a:visited {
-			color: $teal;
-		}
-    }
 }
+
+
+// Add arrows after footer menu links
+#menu-footer-menu li a::after {
+	content: "\00BB";
+	margin-left: 5px;
+}
+
 
 footer .gray-bg {
 	padding: 1.2em 5em;
@@ -66,8 +68,8 @@ footer .gray-bg {
     clear: both;
 }
 
-footer .aafp-foot {
-	margin: 0;
-	margin: 0 1.5rem;
+.aafp-foot {
+	max-width: 1170px;
+	margin: 0 auto;
 	padding: 2rem;
 }

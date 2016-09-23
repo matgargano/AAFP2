@@ -159,6 +159,30 @@ nav#secondary-navigation button {
 
 }
 
+/*--------------------------------------------------------------
+## Widget Nav's
+--------------------------------------------------------------*/
+
+.widget_nav_menu {
+  
+  display: flex;
+    flex-direction: column;
+
+    li {
+    margin: .5em 0;
+
+    a {
+      font-size: 1em;
+      // font-weight: bold;
+      color: $teal;
+    }
+    a:hover,
+    a:visited {
+      color: $teal;
+    }
+    }
+}
+
 .widget_nav_menu {
 
   a:hover {
@@ -202,18 +226,23 @@ nav#secondary-navigation button {
 ## Sidebar 'All Pages' Nav Menu (pages)
 --------------------------------------------------------------*/
 
+// Styles for pages menu 
+.widget_pages {
+    margin: 1.25em 10% 3em;
+}
 // Show ONLY the CURRENT page and it's children, by hiding siblings and unhiding the current item and it's children
 
-.widget_pages .widget-title {
-  display: none;
-}
-.widget_pages li {
+.widget_pages {
+  .widget-title,
+  li {
     display: none;
+  }
 }
-.widget_pages li.current_page_item {
-    display: list-item;
-}
-.widget_pages li.current_page_item > .children li {
+
+// Show and style all list items that are children of the top level ancestor of the current page.
+.widget_pages li.current_page_item > .children li,
+.widget_pages li.current_page_ancestor > .children li,
+.widget_pages li.current_page_ancestor {
     display: list-item;
 
     a {
@@ -222,21 +251,62 @@ nav#secondary-navigation button {
       font-style: italic;
     }
 }
+
 .widget_pages li.current_page_item > a {
-    font-size: 1.2em;
-    color: $teal;
-    font-weight: bold;
-    padding-bottom: .4em;
-    border-bottom: 1px solid $teal;
-    text-decoration: none;
+  
+  color: $teal;
+  font-weight: bold;
+  
+  
+  text-decoration: none;
+  font-style: inherit;
+  
+}
+
+// TOP LEVEL ANCESTOR of current page
+.widget_pages > ul > li.current_page_ancestor > a,
+.widget_pages > ul > li.current_page_item > a {
+  font-size: 1.25em;
+  color: $teal;
+  font-weight: bold;
+  border-bottom: 1px solid $teal;
+  text-decoration: none;
+  font-style: inherit;
+  display: flex;
+}
+
+.widget_pages > ul > li.page_item > .children > li::before,
+.widget_pages > ul > li.page_item > .children > li.page_item_has_children .children > li.page_item_has_children .children > li::before {
+    content: "\00BB";
+    margin-right: 5px;
+}
+
+.widget_pages > ul > li.page_item > .children > li.page_item_has_children .children > li::before,
+.widget_pages > ul > li.page_item > .children > li.page_item_has_children .children > li.page_item_has_children .children li.page_item_has_children .children > li::before {
+    content: "\203A";
+    margin-right: 5px;
+}
+
+// CURRENT PAGE
+.widget_pages li.current_page_item {
+    display: list-item;
+}
+
+// When the CURRENT PAGE is a TOP lvl Page
+.widget_pages > li.current_page_item {
 
 }
-.widget_pages li.current_page_item > .children {
-    margin-top: 1.5em;
-    font-size: .95em;
 
+.widget_pages li.current_page_item > a {
+  color: $teal!important;
+  font-weight: bold;
+  font-style: normal;
 }
-// Styles for pages menu 
-.widget_pages {
-    margin: 1.5em 13% 3em;
+
+.widget_pages > ul > li.current_page_ancestor > .children,
+.widget_pages > ul > li.current_page_item > .children {
+    margin-top: 1.3em;
+    margin-left: 0;
+    font-size: .875em;
 }
+
