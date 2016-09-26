@@ -24,7 +24,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="featured-categories">
+<section id="featured-categories">
 	<ul class="featured-categories">
 	  <?php
 	 
@@ -46,19 +46,26 @@ get_header(); ?>
 
 	  if( $meta_query->have_posts() ) : while( $meta_query->have_posts() ) : $meta_query->the_post(); ?>
 
-	      <li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
-	      <p>Test</p>
+	    <li class="featured-category">
+	      	<a href="<?php the_permalink() ?>">
+	      <?php 
+
+		// render
+		?>
+
+	    <?php if( get_field('category-thumb') ): ?>
+		     	<figure class="cat-page-thumb">
+					<img src="<?php the_field('category-thumb'); ?>" />
+				</figure>
+				<span class="category-name"><?php the_title() ?></span>
+			</a>
+		</li>
+		<?php endif; ?>
 
 	  <?php endwhile; endif; wp_reset_postdata(); ?>
 	</ul>
 </section>
 
-<section class="categories-row">
-	<nav id="secondary-navigation" class="secondary-navigation" role="navigation">
-		<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'aafp' ); ?></button>
-		<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
-	</nav><!-- #site-navigation -->
-</section>
 
 <section id="primary" class="primary home">
 	<main id="main" class="site-main" role="main">

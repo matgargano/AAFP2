@@ -60,60 +60,8 @@ ul#primary-menu li.current_page_ancestor {
   }
 }
 
-/*--------------------------------------------------------------
-## Categories Nav Menu (Home Page)
---------------------------------------------------------------*/
-
 nav#secondary-navigation button {
   display: none;
-}
-
-#secondary-menu {
-  position: relative;
-  list-style: none;
-  margin: 0 0 2em 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-#secondary-menu li {
-
-  box-sizing: border-box;
-  padding: 0;
-  flex: 1;
-  margin: 15px;
-  height: auto;
-  // display: flex;
-  // justify-content: center;
-	
-
-	a {
-	    display: flex;
-    	flex-direction: column;
-    	margin: 0;
-    	border-radius: 6px;
-    	background-color: #767676;
-    	background-color: $lightgray;
-    	text-decoration: none;
-	}
-
-	img {
-		padding-bottom: 0;
-		border-bottom: 4px solid $tomato;
-		border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    width: 100%;
-    height: auto;
-	}
-
-	.menu-image-title {
-		color: $tomato;
-		padding: .4em;
-    	text-transform: uppercase;
-    	font-weight: bold;
-	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -126,25 +74,9 @@ nav#secondary-navigation button {
     font-size: 1.1em;
   }
 
-  #secondary-menu li {
-    width: 33.33%;
-    flex-grow: 0;
-    flex-basis: calc(33.33% - 30px);
-  }
-}
-
-@media only screen and (max-width: 740px) {
-
-  #secondary-menu li {
-    flex-basis: calc(33.33% - 30px);
-  }
 }
 
 @media only screen and (max-width: 540px) {
-
-  #secondary-menu li {
-    flex-basis: calc(50% - 30px);
-  }
 
   .slogan-bar {
     font-size: 1em;
@@ -195,27 +127,6 @@ nav#secondary-navigation button {
   font-weight: normal;
 }
 
-
-
-
-/* .widget-area .current-menu-item {
-	font-weight: bold;
-	
-	a {
-		color: $teal;
-	}
-	
-} */
-/* #primary-menu {
-  z-index: 99;
-}
-#primary-menu[aria-expanded="false"] {
-  display: none!important;
-}
-.main-navigation.toggled ul {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 /*--------------------------------------------------------------
 ## Mobile Nav
