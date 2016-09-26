@@ -24,6 +24,34 @@ get_header(); ?>
 	</div>
 </section>
 
+<section class="featured-categories">
+	<ul class="featured-categories">
+	  <?php
+	 
+	  $meta_query_args = array(
+	    'post_type'      => 'category-page',
+	    'posts_per_page' => -1,
+	    'post_status'    => 'publish',
+	    'meta_query'     => array(
+	      array(
+	        'key'     => 'featured',
+	        'value'   => '',
+	        'compare'   => '!=',
+	      ),
+	    ),
+	  );
+
+	  // a new instance of the WP_query class   
+	  $meta_query = new WP_Query( $meta_query_args );
+
+	  if( $meta_query->have_posts() ) : while( $meta_query->have_posts() ) : $meta_query->the_post(); ?>
+
+	      <li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
+	      <p>Test</p>
+
+	  <?php endwhile; endif; wp_reset_postdata(); ?>
+	</ul>
+</section>
 
 <section class="categories-row">
 	<nav id="secondary-navigation" class="secondary-navigation" role="navigation">
