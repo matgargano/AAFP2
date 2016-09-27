@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<div class="widget-row">
-			<div id="footer-sidebar" class="content-wrap widget-wrap">
+			<div id="footer-sidebar" class="content-wrap widget-wrap clearfix">
 				<div id="footer-sidebar1">
 				<?php
 				if(is_active_sidebar('footer-sidebar-1')){

@@ -1,0 +1,22 @@
+header.page-header.toybox {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    /* border-bottom: 1px solid teal; */
+    justify-content: flex-end;
+
+    h1 {
+		border-bottom: 1px solid $teal;
+		flex: 0 1 700px;
+    }
+}
+
+.toybox-wrap {
+	display: flex;
+    flex-flow: row wrap;
+
+}
+
+.toybox-wrap > div.os_widget {
+    flex: 1 1 32%;
+}
