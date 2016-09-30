@@ -176,9 +176,6 @@ jQuery(document).ready(function ($) {
             var output = '',
                 counter = 0;
             $("html, body").animate({scrollTop: $('#scroll-map-container').offset().top - 50}, 500);
-            console.log(data);
-
-
             if (
 
                 ( data.data.hasOwnProperty('practitionerList') && (!Array.isArray(data.data.practitionerList) || data.data.practitionerList.length == 0  ) ) ||
@@ -256,11 +253,9 @@ jQuery(document).ready(function ($) {
         var ischecked = $(this).is(':checked');
         if (!ischecked) {
             $('.search-result-single').show();
-            console.log('all');
         } else {
             $('.search-result-single').hide();
             $('.cat-friendly-result').show();
-            console.log('cf');
         }
 
     });
