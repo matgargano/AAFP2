@@ -7,6 +7,10 @@
  * @package AAFP
  */
 
+require __DIR__ . '/inc/find-location.php';
+
+Find_Location::init();
+
 if ( ! function_exists( 'aafp_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
